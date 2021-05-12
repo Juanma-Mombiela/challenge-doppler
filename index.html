@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width;initial-scale=1.0; maximum-scale:1.0; user-scalable=1" />
+    <meta name="keywords" content="UIChallenge, frontend, html, css, js, sass, automatize, flex layout">
+    <meta name="autor" content="Juan Manuel Mombiela">
+    <meta name="description" content="Responsive landing de Challenge UI para Doppler">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="msapplication-TileColor" content="#5da552">
+    <meta name="theme-color" content="#5da552">
+
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="UI Challenge - Doppler">
+    <meta property="og:url" content="https://www.fromdoppler.com/es/">
+    <meta property="og:site_name" content="UI Challenge - Doppler">
+
+    <title>UI Challenge - Doppler</title>
+    <link rel="canonical" href="https://www.fromdoppler.com/es/">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+
+    <!-- ICON -->
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5da552">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="build/css/challenge-custom.css">
+
+</head>
+
+<body>
+  <!-- Main content -->
+  <header class="header_main">
+    <svg class="slider_mask" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080" width="0" height="0">
+        <defs>
+          <!-- Slide 1 -->
+          <pattern id="pattern1l" patternUnits="userSpaceOnUse" width="562" height="366" viewBox="0 100 562 366">
+            <image xlink:href="images/slider1a.jpg" width="600px" height="600px"/>
+          </pattern>
+          <pattern id="pattern1r" patternUnits="userSpaceOnUse" x="365px" width="562" height="366" viewBox="0 240 562 366">
+            <image xlink:href="images/slider1b.jpg" width="600px" height="600px"/>
+          </pattern>
+          <!-- Slide 2 -->
+          <pattern id="pattern2l" patternUnits="userSpaceOnUse" width="562" height="366" viewBox="0 100 562 366">
+            <image xlink:href="images/slider2a.jpg" width="600px" height="600px"/>
+          </pattern>
+          <pattern id="pattern2r" patternUnits="userSpaceOnUse" x="365" width="562" height="366" viewBox="0 240 562 366">
+            <image xlink:href="images/slider2b.jpg" width="600px" height="600px"/>
+          </pattern>
+        </defs>
+    </svg>
+    <div class="slide" id="slide-1">
+      <h1>ux challenge</h1>
+      <div class="slide_images">
+        <div class="slide_image slide_image--left">
+          <div class="slide_price"><a href="#">$269 Buy</a></div>
+          <div class="slide_color">
+              <span class="color"></span>
+              <span class="color--secondary"></span>
+          </div>
+          <svg viewBox="0 0 900 365" version="1.1"	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px">
+            <path d="M 0 0 L 0 365 L 351.2382 365 L 562 0 L 0 0 Z" fill="url(#pattern1l)"/>
+          </svg>
+        </div>
+        <div class="slide_image slide_image--right">
+          <div class="slide_detail">
+            <a href="#">Details</a>
+          </div>
+          <svg viewBox="0 0 900 365" version="1.1"	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px">
+            <path d="M 900 365 L 900 0 L 548.7618 0 L 338 365 L 900 365 Z" fill="url(#pattern1r)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="slide" id="slide-2">
+      <h1>ux challenge</h1>
+      <div class="slide_images">
+        <div class="slide_image slide_image--left">
+          <div class="slide_price"><a href="#">$152 Buy</a></div>
+          <div class="slide_color">
+            <span class="color"></span>
+            <span class="color--secondary"></span>
+          </div>
+          <svg viewBox="0 0 900 365" version="1.1"	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px">
+            <path d="M 0 0 L 0 365 L 351.2382 365 L 562 0 L 0 0 Z" fill="url(#pattern2l)"/>
+          </svg>
+        </div>
+        <div class="slide_image slide_image--right">
+          <div class="slide_detail">
+            <a href="#">Details</a>
+          </div>
+          <svg viewBox="0 0 900 365" version="1.1"	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px">
+            <path d="M 900 365 L 900 0 L 548.7618 0 L 338 365 L 900 365 Z" fill="url(#pattern2r)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="slider_pagination">
+      <a href="#slide-1" class="button" onclick="classSlide(1)">Gravity Black</a>
+      <a href="#slide-2" class="button" onclick="classSlide(2)">Classic Brown</a>
+    </div>
+  </header>
+  <!-- Main content -->
+  <main>
+    <article>
+      <h2>Meet our Head of HR: Adventurer without limits</h2>
+      <h3>This installment of Meet the Making Senser focuses on Gabriel Buyatti. Read how he
+          manages to fulfill a
+          critical role and the interests that drive him, followed by an introspective self-analysis.</h3>
+      <img  src="images/buyatti.jpg" alt="Head of HR: Gabriel Buyatti">
+      <p>Once again we’re tapping into our company resources with another teammate
+          interview. Today it’s Nazareno
+          Oviedo’s turn, so we asked him all about his role as an UX Developer at Making Sense. To begin, a few
+          basics: he’s from Mar del Plata, and he’s a lover of tango and National music. He plays the piano and
+          the guitar and he’s curious about learning new things every day.</p>
+      <p>As for his professional life, Nazareno graduated from Universidad Nacional
+          Tecnológica when he was 25
+          years old. Currently, he’s part of the UX/UI team for one of our partners’ projects.</p>
+      <p >Once again we’re tapping into our company resources with another teammate
+          interview. Today it’s Nazareno
+          Oviedo’s turn, so we asked him all about his role as an UX Developer at Making Sense. To begin, a few
+          basics: he’s from Mar del Plata, and he’s a lover of tango and National music. He plays the piano and
+          the guitar and he’s curious about learning new things every day.</p>
+      <p>As for his professional life, Nazareno graduated from Universidad Nacional
+          Tecnológica when he was 25
+          years old. Currently, he’s part of the UX/UI team for one of our partners’ projects.</p>
+      </sarticle>
+  </main>
+  <!-- Scripts -->
+  <script type="text/javascript" src="build/js/scripts.min.js"></script>
+</body>
+
+</html>

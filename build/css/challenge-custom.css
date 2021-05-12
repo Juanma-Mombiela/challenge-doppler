@@ -1,0 +1,199 @@
+/* Font Familys */
+/* Font Weights */
+/* semantic-colors */
+html, body {
+  height: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: #333;
+  background: white;
+  text-align: center;
+  margin: 0; }
+  body h1 {
+    font-weight: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin: 1em 0 1em; }
+  body h2 {
+    font-weight: 600;
+    font-size: 2em;
+    width: 40%;
+    margin: 3em auto 3em;
+    line-height: 1.5; }
+  body h3 {
+    font-weight: 500;
+    font-size: 1.3em;
+    width: 65%;
+    margin: 1.5em auto 3em;
+    line-height: 1.5; }
+  body p {
+    font-weight: 600;
+    text-align: left;
+    font-size: 1em;
+    margin: 2em 4em;
+    line-height: 1.5; }
+  body .header_main {
+    min-height: 100vh;
+    overflow: hidden;
+    text-align: left;
+    background-color: #5da552;
+    background: linear-gradient(120deg, #333333 51%, #5da552 50%);
+    transition: all .4s ease-in; }
+    body .header_main h1 {
+      width: 100%; }
+    body .header_main .slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0; }
+      body .header_main .slide:target .slide_image {
+        transform: translate(0);
+        opacity: 1;
+        transition-delay: 0.5s;
+        filter: blur(0) drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.35)); }
+      body .header_main .slide .slide_images {
+        position: relative;
+        width: 100%;
+        max-width: 900px;
+        height: 400px;
+        margin: 0 30px; }
+      body .header_main .slide .slide_image {
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        transition: all 0.5s ease-in-out 0s;
+        filter: blur(10px) drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.35));
+        will-change: transform, opacity, filter; }
+        body .header_main .slide .slide_image svg {
+          display: block; }
+        body .header_main .slide .slide_image--left {
+          transform: translate(0.75%, -15px); }
+        body .header_main .slide .slide_image--right {
+          top: 6vmin;
+          transform: translate(-0.75%, 15px); }
+        body .header_main .slide .slide_image .slide_price {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: #222;
+          padding: 1.25em 3.125em;
+          font-weight: 700;
+          font-size: .8em;
+          text-transform: uppercase;
+          letter-spacing: 0.125em;
+          transition: all .4s ease; }
+          body .header_main .slide .slide_image .slide_price a {
+            text-decoration: none;
+            color: white; }
+        body .header_main .slide .slide_image .slide_color {
+          position: absolute;
+          bottom: 0%;
+          left: 1.25em;
+          display: flex;
+          flex-flow: column wrap; }
+          body .header_main .slide .slide_image .slide_color .color, body .header_main .slide .slide_image .slide_color .color--secondary {
+            cursor: pointer;
+            height: 1em;
+            width: 1em;
+            margin: 0 0 0.5em;
+            background-color: #333;
+            border-radius: 50%;
+            transition: all .4s ease; }
+            body .header_main .slide .slide_image .slide_color .color:hover, body .header_main .slide .slide_image .slide_color .color--secondary:hover {
+              background-color: grey; }
+          body .header_main .slide .slide_image .slide_color .color--secondary {
+            background-color: #5da552; }
+        body .header_main .slide .slide_image .slide_detail {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          padding: 25px 20px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          cursor: pointer;
+          color: #333;
+          transition: all .4s ease;
+          overflow: hidden; }
+          body .header_main .slide .slide_image .slide_detail a {
+            text-decoration: none;
+            color: #333;
+            transition: all .4s ease;
+            font-size: .8em;
+            font-weight: 700; }
+    body .header_main .slider_pagination {
+      position: absolute;
+      bottom: 7vh;
+      width: 100%;
+      text-align: center; }
+      body .header_main .slider_pagination .button {
+        position: relative;
+        display: inline-block;
+        padding: 15px 30px;
+        line-height: 1;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: .9em;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: white;
+        transition: all 0.25s ease;
+        appearance: none; }
+        body .header_main .slider_pagination .button:hover {
+          color: #333;
+          background-color: white; }
+      body .header_main .slider_pagination .active {
+        border: solid 2px white; }
+        body .header_main .slider_pagination .active::before {
+          content: "/";
+          color: white;
+          font-size: 3em;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 100;
+          font-style: italic;
+          position: absolute;
+          left: 53%;
+          top: -35px; }
+        body .header_main .slider_pagination .active::after {
+          content: "/";
+          color: white;
+          font-size: 3em;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 100;
+          font-style: italic;
+          position: absolute;
+          left: 35%;
+          bottom: -35px; }
+  body main {
+    padding: .5em 2em; }
+    body main article img {
+      width: 90%; }
+  @media (max-width: 640px) {
+    body h2 {
+      font-size: 1.5em;
+      width: 90%; }
+    body h3 {
+      font-size: 1.2em;
+      width: 90%; }
+    body p {
+      margin: 2em 1em; }
+    body .header_main .slide .slide_image .slide_price {
+      padding: 1em 2em; }
+    body .header_main .slide .slide_image .slide_detail {
+      padding: 10px 20px; }
+    body .header_main .slider_pagination .button {
+      width: 45%; } }
+
+/*# sourceMappingURL=challenge-custom.css.map */
